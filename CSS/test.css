@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    background-color: #FF731A;
+}
+
+nav { 
+    width: 90vw;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 4vh;
+}
+
+nav ul { 
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+}
+
+nav li { 
+    color: #fff;
+    font-size: 20px;
+    list-style: none;
+    margin-top: auto;
+    margin-right: 5vw;
+    font-family: 'Montserrat';
+}
+
+.div_logo { 
+    width: 100px; 
+    max-width: 100px;
+    min-width: 100px; 
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    margin: 0;
+}
+
+.logo { 
+    width: 100%;
+    margin: auto;
+}
+
+.contato { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contato p { 
+    margin-right: 2vw;
+    font-family: 'Montserrat';
+}
+
+.contato img { 
+    width: 40px;
+    height: 40px;
+}
+
+.GERAL {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lateral { 
+    width: 100px;
+    height: 80vh;
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lateral img{ 
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    
+}
+
+.conteudo {
+    width: calc(90vw - 100px); 
+    border-color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.mensagem{ 
+    width: 30vw;
+    color: #fff;
+    margin-left:5vw;
+}
+
+.mensagem h1{ 
+    font-family: 'Montserrat';
+    font-size: 42px;
+    line-height: 60px;
+}
+.mensagem p{ 
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.foto_engnet img{ 
+    width: 600px;
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media (max-width: 1500px){ 
+    .mensagem{ 
+        width: 80vw;
+        color: #fff;
+        margin-left:5vw;
+    }
+    .mensagem h1{ 
+        font-family: 'Montserrat';
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .mensagem p{ 
+        font-family: 'Montserrat';
+        font-size: 2vw;
+        font-weight: 400;
+        line-height: 2vw;
+    }
+    .foto_engnet img{ 
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px){ 
+    .conteudo {
+        flex-direction: column-reverse;
+    }
+
+    .mensagem{ 
+        width: 80vw;
+        color: #fff;
+        margin-left:5vw;
+    }
+    .mensagem h1{ 
+        font-family: 'Montserrat';
+        font-size: 3vw;
+        line-height: 3vw;
+        text-align: center;
+        margin-right: 7vw;
+    }
+    .mensagem p{ 
+        font-family: 'Montserrat';
+        font-size: 2vw;
+        font-weight: 400;
+        line-height: 2vw;
+        text-align: center;
+        margin-right: 7vw;
+    }
+    .contato p { 
+        display: none;
+    }
+    .foto_engnet img{ 
+        width: 80%;
+        margin: 0 10vw 10vh 10vw; 
+    }
+}
