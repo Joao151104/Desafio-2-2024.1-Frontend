@@ -5,14 +5,14 @@ body {
 
 nav { 
     width: 90vw;
-    height: 100px;
+    height: 115px;
     margin: auto;
     display: flex;
     flex-direction: row;
     border-color: #fff;
     border-width: 2px;
     border-style: solid;
-    margin-top: 4vh;
+    margin-top: 1vh;
 }
 
 nav ul { 
@@ -28,6 +28,15 @@ nav li {
     margin-top: auto;
     margin-right: 5vw;
     font-family: 'Montserrat';
+}
+
+nav a{ 
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{ 
+    text-decoration:underline; 
 }
 
 .div_logo { 
@@ -76,7 +85,9 @@ nav li {
 
 .lateral { 
     width: 100px;
-    height: 80vh;
+    max-width: 100px; 
+    min-width: 100px;
+    height: 85vh;
     border-color: #fff;
     border-width: 2px;
     border-style: solid;
@@ -84,6 +95,13 @@ nav li {
     display: flex;
     flex-direction: column;
     
+}
+
+.imagens{ 
+    margin-top: auto;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .lateral img{ 
@@ -121,10 +139,81 @@ nav li {
 }
 .foto_engnet img{ 
     width: 600px;
-    margin: auto;
     margin-left: 20%;
     margin-right: 20%;
 }
+
+
+/* PAGINA DE SERVIÇOS */
+
+.servicos_gerias{ 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: -4vw;
+}
+
+.conteudo_servicos{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2vw;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+.app {
+    margin-left: 5vw;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 22vw; /* 25% da largura da viewport */
+    height: 22vw; /* Igual à largura */
+    background-color: #fff;
+    border-radius: 25px;
+    align-items: center;
+    text-align:center;
+}
+
+.app h1{ 
+    font-size: 24px;
+}
+
+.app p{
+    font-size: 13px;
+    line-height: 15px;
+    padding: 0 2vw 0 2vw; 
+}
+
+.solucoes{ 
+    display: flex;
+    flex-direction: column;
+    width: calc(44vw + 5.5vw);
+    height: 22vw; 
+    background-color: #fff;
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 5.5vw;
+}
+
+.solucoes h1{ 
+    font-size: 24px;
+}
+.solucoes p{ 
+    font-size: 13px;
+    line-height: 15px;
+}
+
+
+.icones_work{ 
+    width: 64px;
+    margin-top: 7vh;
+    margin-bottom: 2vw; 
+}
+
 
 @media (max-width: 1500px){ 
     .mensagem{ 
@@ -146,11 +235,32 @@ nav li {
     .foto_engnet img{ 
         width: 80%;
     }
+
+    .icones_work{ 
+        width: 5vw;
+        margin-top: 7vh;
+        margin-bottom: 0; 
+    }
+
+    .app h1{ 
+        font-size: 1.5vw;
+    }
+    .app p{ 
+        font-size: 0.8vw;
+        line-height: 0.9vw;
+    }
+
+    .solucoes h1{ 
+        font-size: 1.5vw;
+    }
+    .solucoes p{ 
+        font-size: 0.9vw;
+    }
 }
 
 @media (max-width: 900px){ 
     .conteudo {
-        flex-direction: column-reverse;
+        flex-direction:column;
     }
 
     .mensagem{ 
@@ -163,7 +273,7 @@ nav li {
         font-size: 3vw;
         line-height: 3vw;
         text-align: center;
-        margin-right: 7vw;
+        margin-right: 15vw;
     }
     .mensagem p{ 
         font-family: 'Montserrat';
@@ -171,7 +281,7 @@ nav li {
         font-weight: 400;
         line-height: 2vw;
         text-align: center;
-        margin-right: 7vw;
+        margin-right: 15vw;
     }
     .contato p { 
         display: none;
@@ -180,4 +290,36 @@ nav li {
         width: 80%;
         margin: 0 10vw 10vh 10vw; 
     }
+
+    .conteudo_servicos{
+        margin-top: 0;
+        display: flex;
+        flex-direction:column;
+        font-family: 'Montserrat';
+    }
+    .app {
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: column;
+        width: 50vw; /* 25% da largura da viewport */
+        height: 22vw; /* Igual à largura */
+        background-color: #fff;
+        border-radius: 25px;
+        align-items: center;
+        text-align:center;
+    }
+
+    .solucoes{ 
+        width: 50vw;
+        height: 22vw; 
+        background-color: #fff;
+        margin-top: 2vw;
+        margin-right: 0;
+        margin-left: 5.5vw;
+    }
+
+    .lateral{ 
+        height:calc((5 * 22vw) + ( 5*2vw));
+    }
+    
 }
